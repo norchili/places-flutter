@@ -8,7 +8,7 @@ class GradientBack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 250.0,
+        height: 400.0,
         decoration: BoxDecoration(
             gradient: LinearGradient(
                 colors: [Color(0xFFFF4E00), Color(0xFF8EA604)],
@@ -24,6 +24,6 @@ class GradientBack extends StatelessWidget {
               fontFamily: "Lato",
               fontWeight: FontWeight.bold),
         ),
-        alignment: Alignment(-0.9, -0.6));
+        alignment: Alignment(-0.9, -0.75));
   }
 }

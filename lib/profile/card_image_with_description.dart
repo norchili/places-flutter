@@ -15,7 +15,7 @@ class CardImageWithDescription extends StatelessWidget {
     final card = Container(
       height: 200.0,
       //width: 300.0,
-      margin: EdgeInsets.only(top: 100.0, left: 20.0, right: 20.0),
+      //margin: EdgeInsets.only(left: 20.0, right: 20.0),
       decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.cover, image: AssetImage(pathImageOfPlace)),
@@ -29,12 +29,15 @@ class CardImageWithDescription extends StatelessWidget {
           ]),
     );
 
-    return Stack(
-      alignment: Alignment(0.0, 1.5),
-      children: <Widget>[
-        card,
-        CardDescriptionImageProfile(namePlace, descriptionPlace, stepsCount)
-      ],
-    );
+    return Container(
+        margin:
+            EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0, bottom: 60.0),
+        child: Stack(
+          alignment: Alignment(0.0, 1.5),
+          children: <Widget>[
+            card,
+            CardDescriptionImageProfile(namePlace, descriptionPlace, stepsCount)
+          ],
+        ));
   }
 }
